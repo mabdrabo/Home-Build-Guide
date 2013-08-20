@@ -25,6 +25,7 @@ public class AddItemActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_item);
+//        setTitle("Add to ");
 		
 		addDateTextViewButton = (Button) findViewById(R.id.addDateTextViewButton);
 		datePicker = new DatePickerFragment();

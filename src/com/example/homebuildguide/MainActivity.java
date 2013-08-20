@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 	public static int SECONDARY_POSITION;
 	public static DatabaseHandler database;
 	
-	public static ListView mainListview;
+	public static ListView mainListView;
 	public static String[] values;
 
 	@Override
@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 		
 		database = new DatabaseHandler(this);
 		
-		mainListview = (ListView) findViewById(R.id.mainListView);
+		mainListView = (ListView) findViewById(R.id.mainListView);
 		values = new String[] { "To-Do", "Stats", "Floor", "Wall", "Rooms", "Other" };
 
 	    final ArrayList<String> mainList = new ArrayList<String>();
@@ -40,11 +40,11 @@ public class MainActivity extends Activity {
 
 	    ArrayAdapter<?> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mainList);
 	    
-        mainListview.setAdapter(adapter);
+        mainListView.setAdapter(adapter);
         
         final Intent secondaryActivityIntent = new Intent().setClass(this, SecondaryActivity.class);
         
-        mainListview.setOnItemClickListener(new OnItemClickListener() {
+        mainListView.setOnItemClickListener(new OnItemClickListener() {
         	  @Override
         	  public void onItemClick(AdapterView<?> parent, View view,
         	    int position, long id) {

@@ -27,7 +27,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_NAME = "name";
     private static final String KEY_PRICE = "price";
     private static final String KEY_PAID = "paid";
-    private static final String KEY_DEADLINE = "deadlin_millis";
+    private static final String KEY_DEADLINE = "deadline_millis";
  
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

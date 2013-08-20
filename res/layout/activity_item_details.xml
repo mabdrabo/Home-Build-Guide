@@ -29,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Price"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -43,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Paid"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -57,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Remaining"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -73,6 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Deadline"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -88,6 +92,8 @@
         android:id="@+id/doneCheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Done" />
+        android:text="Done"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>

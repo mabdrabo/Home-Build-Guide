@@ -31,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Price"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -45,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deadline"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -61,6 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addItemButtonOnClick"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:text="Add Item" />
 
 </LinearLayout>
