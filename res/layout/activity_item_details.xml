@@ -10,6 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ItemDetailsActivity" >
 
+    <ImageSwitcher
+            android:layout_width="fill_parent"
+            android:layout_height="126dp"
+            android:id="@+id/imageSwitcher"
+            android:layout_gravity="center"/>
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"

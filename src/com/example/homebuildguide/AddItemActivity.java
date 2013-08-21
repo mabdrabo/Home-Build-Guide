@@ -25,14 +25,13 @@ public class AddItemActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_item);
-//        setTitle("Add to ");
-		
-		addDateTextViewButton = (Button) findViewById(R.id.addDateTextViewButton);
-		datePicker = new DatePickerFragment();
+        setTitle("Add Item");
 	}
 
 	
 	public void addDateOnClick(View view) {
+        addDateTextViewButton = (Button) findViewById(R.id.addDateTextViewButton);
+        datePicker = new DatePickerFragment();
 		datePicker.show(getSupportFragmentManager(), "new_datePicker");
 	}
 
@@ -40,7 +39,7 @@ public class AddItemActivity extends FragmentActivity {
 		String name = "" + ((EditText) findViewById(R.id.addNameEditText)).getText();
 		float price = Float.parseFloat("" + ((EditText) findViewById(R.id.addPriceEditText)).getText());
 
-		Item newItem = new Item(MainActivity.MAIN_POSITION, name, price, 0, deadlineMillis);
+		Item newItem = new Item(MainActivity.MAIN_POSITION - 2, name, price, 0, deadlineMillis);
 		MainActivity.database.addItem(newItem);
 		
 		Intent intent = new Intent().setClass(this, SecondaryActivity.class);
