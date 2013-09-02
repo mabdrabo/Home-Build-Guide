@@ -1,9 +1,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/action_about"
+        android:id="@+id/action_add_category"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/action_content_new"
+        android:title="add category"/>
+
+    <item
+        android:id="@+id/action_todo"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/action_collections_view_as_list"
+        android:title="To-do"/>
+
+    <item
+        android:id="@+id/action_stats"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/action_content_paste"
+        android:title="Statistics"/>
+
+    <item
+        android:id="@+id/action_main"
         android:showAsAction="always"
-        android:icon="@drawable/action_about"
-        android:title="about"/>
+        android:icon="@drawable/action_navigation_previous_item"
+        android:title="Categories"/>
 
 </menu>

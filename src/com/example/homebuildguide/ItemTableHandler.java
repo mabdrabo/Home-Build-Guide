@@ -134,7 +134,7 @@ public class ItemTableHandler {
         return itemList;
     }
 
-    public static ArrayList<Item> filterItemsByParent(int parent_id) {
+    public static ArrayList<Item> getCategoryItems(int parent_id) {
         ArrayList<Item> allItems = getAllItems();
         ArrayList<Item> filteredItems = new ArrayList<Item>();
         for (Item item : allItems) {

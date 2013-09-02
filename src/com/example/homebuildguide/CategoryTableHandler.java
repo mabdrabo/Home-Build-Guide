@@ -125,4 +125,23 @@ public class CategoryTableHandler {
         return count;
     }
 
+
+    // Getting total price of all items in the selected Category
+    public float getCategoryPrice(Category category) {
+        float price = 0;
+        ArrayList<Item> items = MainActivity.database.getCategoryItems(category.get_id());
+        for (Item item : items)
+            price += item.get_price();
+        return price;
+    }
+
+
+    // Getting total paid of all items in the selected Category
+    public float getCategoryPaid(Category category) {
+        float paid = 0;
+        ArrayList<Item> items = MainActivity.database.getCategoryItems(category.get_id());
+        for (Item item : items)
+            paid += item.get_paid();
+        return paid;
+    }
 }

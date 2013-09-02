@@ -31,20 +31,20 @@
                 android:value="com.example.homebuildguide.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.homebuildguide.ItemDetailsActivity"
-            android:label="@string/title_activity_item_details"
+            android:name=".ItemEditActivity"
+            android:label="Edit Item"
             android:parentActivityName="com.example.homebuildguide.SecondaryActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.homebuildguide.SecondaryActivity" />
         </activity>
         <activity
-            android:name="com.example.homebuildguide.AddItemActivity"
-            android:label="@string/title_activity_add_item"
+            android:name=".ItemDetailsActivity"
+            android:label="Item Details"
             android:parentActivityName="com.example.homebuildguide.SecondaryActivity" >
             <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.homebuildguide.SecondaryActivity" />
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.homebuildguide.SecondaryActivity" />
         </activity>
     </application>
 
