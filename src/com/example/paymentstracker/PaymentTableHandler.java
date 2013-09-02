@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -33,9 +33,6 @@ public class PaymentTableHandler {
     }
 
 
-
-
-
     public static void addPayment(Payment payment) {
         SQLiteDatabase db = dbHandler.getWritableDatabase();
 
@@ -55,7 +52,7 @@ public class PaymentTableHandler {
             return null;
 
         SQLiteDatabase db = dbHandler.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_PAYMENTS, null, KEY_ID + "=?", new String[] { String.valueOf(id) }, null, null, null);
+        Cursor cursor = db.query(TABLE_PAYMENTS, null, KEY_ID + "=?", new String[]{String.valueOf(id)}, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
@@ -138,14 +135,14 @@ public class PaymentTableHandler {
 
         // updating row
         System.out.println("updated_id: " + payment.get_id());
-        return db.update(TABLE_PAYMENTS, values, KEY_ID + "=?", new String[] { String.valueOf(payment.get_id()) });
+        return db.update(TABLE_PAYMENTS, values, KEY_ID + "=?", new String[]{String.valueOf(payment.get_id())});
     }
 
 
     // Deleting single Payment
     public static void deletePayment(Payment payment) {
         SQLiteDatabase db = dbHandler.getWritableDatabase();
-        db.delete(TABLE_PAYMENTS, KEY_ID + " = ?", new String[] { String.valueOf(payment.get_id()) });
+        db.delete(TABLE_PAYMENTS, KEY_ID + " = ?", new String[]{String.valueOf(payment.get_id())});
         db.close();
     }
 

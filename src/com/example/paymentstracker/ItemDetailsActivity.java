@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -18,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Formatter;
 import java.util.HashMap;
 
@@ -62,7 +61,7 @@ public class ItemDetailsActivity extends Activity {
             default:
                 break;
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 
     public void onCreate(Bundle savedInstanceState) {

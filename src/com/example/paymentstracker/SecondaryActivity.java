@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -19,7 +18,6 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Formatter;
 import java.util.HashMap;
 import java.util.List;
@@ -58,7 +56,7 @@ public class SecondaryActivity extends FragmentActivity {
             default:
                 break;
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 
 

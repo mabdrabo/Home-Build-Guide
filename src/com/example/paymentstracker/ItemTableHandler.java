@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -65,7 +65,7 @@ public class ItemTableHandler {
             return null;
 
         SQLiteDatabase db = dbHandler.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_ITEMS, null, KEY_ID + "=?", new String[] { String.valueOf(id) }, null, null, null);
+        Cursor cursor = db.query(TABLE_ITEMS, null, KEY_ID + "=?", new String[]{String.valueOf(id)}, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
@@ -73,7 +73,7 @@ public class ItemTableHandler {
             return null;
 
         Item item = new Item(Integer.parseInt(cursor.getString(1)), cursor.getString(2),
-                Float.parseFloat(cursor.getString(3)), Float.parseFloat(cursor.getString(4)), Long.parseLong(cursor.getString(5)) );
+                Float.parseFloat(cursor.getString(3)), Float.parseFloat(cursor.getString(4)), Long.parseLong(cursor.getString(5)));
         item.set_id(Integer.parseInt(cursor.getString(0)));
         cursor.close();
 
@@ -98,7 +98,7 @@ public class ItemTableHandler {
         if (cursor.moveToFirst()) {
             do {
                 Item item = new Item(Integer.parseInt(cursor.getString(1)), cursor.getString(2),
-                        Float.parseFloat(cursor.getString(3)), Float.parseFloat(cursor.getString(4)), Long.parseLong(cursor.getString(5)) );
+                        Float.parseFloat(cursor.getString(3)), Float.parseFloat(cursor.getString(4)), Long.parseLong(cursor.getString(5)));
                 item.set_id(Integer.parseInt(cursor.getString(0)));
 
                 // Adding Item to list
@@ -122,7 +122,7 @@ public class ItemTableHandler {
         if (cursor.moveToFirst()) {
             do {
                 Item item = new Item(Integer.parseInt(cursor.getString(1)), cursor.getString(2),
-                        Float.parseFloat(cursor.getString(3)), Float.parseFloat(cursor.getString(4)), Long.parseLong(cursor.getString(5)) );
+                        Float.parseFloat(cursor.getString(3)), Float.parseFloat(cursor.getString(4)), Long.parseLong(cursor.getString(5)));
                 item.set_id(Integer.parseInt(cursor.getString(0)));
 
                 // Adding Item to list
@@ -159,7 +159,7 @@ public class ItemTableHandler {
 
         // updating row
         System.out.println("updated_id: " + item.get_id());
-        return db.update(TABLE_ITEMS, values, KEY_ID + "=?", new String[] { String.valueOf(item.get_id()) });
+        return db.update(TABLE_ITEMS, values, KEY_ID + "=?", new String[]{String.valueOf(item.get_id())});
     }
 
 
@@ -167,7 +167,7 @@ public class ItemTableHandler {
     public static void deleteItem(Item item) {
         SQLiteDatabase db = dbHandler.getWritableDatabase();
         db.delete(TABLE_ITEMS, KEY_ID + " = ?",
-                new String[] { String.valueOf(item.get_id()) });
+                new String[]{String.valueOf(item.get_id())});
         db.close();
     }
 
@@ -180,7 +180,7 @@ public class ItemTableHandler {
             Calendar nearestCalendar = allItems.get(0).get_deadline_calendar();
 
             for (Item item : allItems) {
-                nearestCalendar = (item.get_deadline_calendar().before(nearestCalendar))? item.get_deadline_calendar() : nearestCalendar;
+                nearestCalendar = (item.get_deadline_calendar().before(nearestCalendar)) ? item.get_deadline_calendar() : nearestCalendar;
             }
             year = nearestCalendar.get(Calendar.YEAR);
             month = nearestCalendar.get(Calendar.MONTH);
@@ -200,7 +200,7 @@ public class ItemTableHandler {
             Calendar farthestCalendar = allItems.get(0).get_deadline_calendar();
 
             for (Item item : allItems) {
-                farthestCalendar = (farthestCalendar.before(item.get_deadline_calendar()))? item.get_deadline_calendar() : farthestCalendar;
+                farthestCalendar = (farthestCalendar.before(item.get_deadline_calendar())) ? item.get_deadline_calendar() : farthestCalendar;
             }
             year = farthestCalendar.get(Calendar.YEAR);
             month = farthestCalendar.get(Calendar.MONTH);

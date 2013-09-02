@@ -1,35 +1,26 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Formatter;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
-
-import android.app.Activity;
-import android.app.Dialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
@@ -100,7 +91,7 @@ public class MainActivity extends Activity {
 
     protected void onResume() {
         super.onResume();
-        categories();
+//        categories();
     }
 
 	public static long getMillis(int year, int month, int day) {
@@ -219,6 +210,7 @@ public class MainActivity extends Activity {
 
 
     private void toDo() {
+        setTitle("To-Do");
         ArrayList<Item> toDoItems = MainActivity.database.getTodoItems();
         toDoList = new ArrayList<HashMap<String, String>>();
         Formatter formatter;

@@ -1,7 +1,4 @@
-package com.example.homebuildguide;
-
-import java.util.Calendar;
-import java.util.Formatter;
+package com.example.paymentstracker;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
@@ -15,6 +12,9 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.Formatter;
 
 public class ItemEditActivity extends FragmentActivity {
 

@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 import java.util.Calendar;
 
@@ -7,7 +7,7 @@ import java.util.Calendar;
  */
 public class Payment {
 
-    private  int _id;
+    private int _id;
     private int _item_id;
     private Calendar _date;
     private float _amount;

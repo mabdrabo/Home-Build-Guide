@@ -1,13 +1,11 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
 
@@ -21,7 +19,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        itemTableHandler  = new ItemTableHandler(this);
+        itemTableHandler = new ItemTableHandler(this);
         categoryTableHandler = new CategoryTableHandler(this);
         paymentTableHandler = new PaymentTableHandler(this);
     }
@@ -33,7 +31,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(CategoryTableHandler.CREATE_CATEGORIES_TABLE);
         db.execSQL(PaymentTableHandler.CREATE_PAYMENTS_TABLE);
     }
- 
+
     // Upgrading database
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -73,7 +71,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void deleteItem(Item item) {
         itemTableHandler.deleteItem(item);
-        for(Payment payment : getItemPayments(item.get_id()))
+        for (Payment payment : getItemPayments(item.get_id()))
             deletePayment(payment);
     }
 
@@ -129,7 +127,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void deleteCategory(Category category) {
         categoryTableHandler.deleteCategory(category);
-        for(Item item : getCategoryItems(category.get_id()))
+        for (Item item : getCategoryItems(category.get_id()))
             deleteItem(item);
     }
 
@@ -166,7 +164,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public int getPaymentsCount() {
         return paymentTableHandler.getPaymentsCount();
     }
-
 
 
 }

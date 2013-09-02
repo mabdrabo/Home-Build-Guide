@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -46,7 +46,7 @@ public class CategoryTableHandler {
             return null;
 
         SQLiteDatabase db = dbHandler.getReadableDatabase();
-        Cursor cursor = db.query(TABLE_CATEGORIES, null, KEY_ID + "=?", new String[] { String.valueOf(id) }, null, null, null);
+        Cursor cursor = db.query(TABLE_CATEGORIES, null, KEY_ID + "=?", new String[]{String.valueOf(id)}, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
@@ -100,7 +100,7 @@ public class CategoryTableHandler {
 
         // updating row
         System.out.println("updated_id: " + category.get_id());
-        return db.update(TABLE_CATEGORIES, values, KEY_ID + "=?", new String[] { String.valueOf(category.get_id()) });
+        return db.update(TABLE_CATEGORIES, values, KEY_ID + "=?", new String[]{String.valueOf(category.get_id())});
     }
 
 
@@ -108,7 +108,7 @@ public class CategoryTableHandler {
     public static void deleteCategory(Category category) {
         SQLiteDatabase db = dbHandler.getWritableDatabase();
         db.delete(TABLE_CATEGORIES, KEY_ID + " = ?",
-                new String[] { String.valueOf(category.get_id()) });
+                new String[]{String.valueOf(category.get_id())});
         db.close();
     }
 

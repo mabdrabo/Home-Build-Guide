@@ -19,51 +19,23 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a2ea60-9f41-4e0c-8539-7bd62c7d9a39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_collections_view_as_list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_collections_view_as_list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_collections_view_as_list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_content_discard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_content_discard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_content_discard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_content_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_content_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_content_edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_content_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_content_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_content_new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_content_paste.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_content_paste.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_content_paste.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_navigation_previous_item.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_navigation_previous_item.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_navigation_previous_item.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/Payment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/PaymentTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_item_edit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/category.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/dialog_add_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/dialog_add_payment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/item_details.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/activity_add_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/activity_secondary.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/statistics_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/AddItemActivity.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/add_category.xml" afterPath="$PROJECT_DIR$/res/layout/dialog_add_category.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemEditActivity.java" />
+    <list default="true" id="b4a2ea60-9f41-4e0c-8539-7bd62c7d9a39" name="Default" comment="edit name + fix up navigation">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HomeBuildGuide.iml" afterPath="$PROJECT_DIR$/Payments Tracker.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/Category.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/Category.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/CategoryTableHandler.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/CategoryTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/DatabaseHandler.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/DatabaseHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/Item.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/Item.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/ItemDetailsActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemEditActivity.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/ItemEditActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemTableHandler.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/ItemTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/MainActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/Payment.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/Payment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/PaymentTableHandler.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/PaymentTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/SecondaryActivity.java" afterPath="$PROJECT_DIR$/src/com/example/paymentstracker/SecondaryActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/CategoryTableHandler.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/CategoryTableHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/DatabaseHandler.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/DatabaseHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemTableHandler.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/ItemTableHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/homebuildguide/SecondaryActivity.java" afterPath="$PROJECT_DIR$/src/com/example/homebuildguide/SecondaryActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_item_details.xml" afterPath="$PROJECT_DIR$/res/layout/activity_item_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/main.xml" afterPath="$PROJECT_DIR$/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HomeBuildGuide.iws" />
@@ -88,7 +60,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -143,56 +116,72 @@
         </entry>
       </file>
       <file leaf-file-name="SecondaryActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/SecondaryActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/SecondaryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="0" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2145">
+            <state line="53" column="20" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ItemDetailsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/ItemDetailsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="36" selection-start="3478" selection-end="3478" vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2400">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="67" selection-start="4333" selection-end="4333" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="3735">
+            <state line="63" column="8" selection-start="1785" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="1695">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#addPaymentDialog#0;class#ItemDetailsActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/DatabaseHandler.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="46" selection-start="3465" selection-end="3465" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2670">
-              <folding />
+            <state line="209" column="0" selection-start="8213" selection-end="8213" vertical-scroll-proportion="0.0" vertical-offset="2775" max-vertical-offset="3615">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2428#2842#0" expanded="true" />
+                <element signature="e#2831#2832#0" expanded="true" />
+                <element signature="e#3413#3429#0" expanded="true" />
+                <element signature="e#4644#5057#0" expanded="true" />
+                <element signature="e#5046#5047#0" expanded="true" />
+                <element signature="e#6511#6527#0" expanded="true" />
+                <element signature="e#6940#6956#0" expanded="true" />
+                <element signature="e#7362#7378#0" expanded="true" />
+                <element signature="e#8525#8541#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryTableHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/CategoryTableHandler.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="31" selection-start="4142" selection-end="4142" vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="2295">
-              <folding />
+            <state line="24" column="36" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="825">
+              <folding>
+                <element signature="e#421#439#0" expanded="true" />
+                <element signature="e#577#595#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/Category.java">
+      <file leaf-file-name="ItemEditActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/ItemEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="540">
+            <state line="86" column="18" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0" vertical-offset="976" max-vertical-offset="1575">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="33" selection-start="75" selection-end="75" vertical-scroll-proportion="0.114503816" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -216,10 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/menu/item_details.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/dialog_add_payment.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/homebuildguide/ItemTableHandler.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_item_details.xml" />
         <option value="$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java" />
         <option value="$PROJECT_DIR$/res/menu/category.xml" />
@@ -232,6 +217,10 @@
         <option value="$PROJECT_DIR$/src/com/example/homebuildguide/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/src/com/example/homebuildguide/CategoryTableHandler.java" />
         <option value="$PROJECT_DIR$/src/com/example/homebuildguide/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/paymentstracker/ItemDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/paymentstracker/SecondaryActivity.java" />
       </list>
     </option>
   </component>
@@ -371,7 +360,7 @@
     </ignored-problems>
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -382,7 +371,48 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeBuildGuide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeBuildGuide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Payments-Tracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeBuildGuide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Payments-Tracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="paymentstracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -417,7 +447,7 @@
       <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.HomeBuildGuide">
+  <component name="RunManager" selected="Android Application.PaymentsTracker">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -507,12 +537,12 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="HomeBuildGuide" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="HomeBuildGuide" />
+    <configuration default="false" name="PaymentsTracker" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="Payments Tracker" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -520,13 +550,32 @@
       <option name="DISABLE_BOOT_ANIMATION" value="false" />
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="CLEAR_LOGCAT" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.HomeBuildGuide" />
+    <configuration default="false" name="PaymentsTracker" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="Payments Tracker" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.PaymentsTracker" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.PaymentsTracker" />
     </list>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -580,12 +629,15 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22807017" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20988655" sideWeight="0.33014354" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52917343" sideWeight="0.7719298" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24878444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -600,9 +652,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29092383" sideWeight="0.7719298" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -616,14 +665,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20988655" sideWeight="0.7719298" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22807017" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="321" width="1280" height="149" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22807017" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="321" width="1280" height="149" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29092383" sideWeight="0.7719298" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20988655" sideWeight="0.33014354" order="4" side_tool="true" content_ui="tabs" />
@@ -635,6 +684,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -642,82 +694,45 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="edit name + fix up navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit name + fix up navigation" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="16" selection-start="1585" selection-end="1585" vertical-scroll-proportion="2.0033388" vertical-offset="0" max-vertical-offset="1560" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/ItemTableHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="29" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.0" vertical-offset="1869" max-vertical-offset="3915" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/category.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/item_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="107" selection-end="658" vertical-scroll-proportion="0.10016695" vertical-offset="0" max-vertical-offset="599" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_item_details.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="41" selection-start="1694" selection-end="1694" vertical-scroll-proportion="1.0227273" vertical-offset="0" max-vertical-offset="945" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/dialog_add_item.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_add_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="16" selection-start="2940" selection-end="2973" vertical-scroll-proportion="-10.62963" vertical-offset="808" max-vertical-offset="1380" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/dialog_add_payment.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_add_payment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="58" selection-start="395" selection-end="395" vertical-scroll-proportion="0.026223777" vertical-offset="90" max-vertical-offset="840" />
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="602" selection-end="610" vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="572" />
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/SecondaryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="0" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/ItemDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="36" selection-start="3478" selection-end="3478" vertical-scroll-proportion="0.0" vertical-offset="1456" max-vertical-offset="2055">
-          <folding />
-        </state>
+        <state line="13" column="37" selection-start="602" selection-end="610" vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
@@ -727,33 +742,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/DatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+        <state line="116" column="46" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.0" vertical-offset="1740" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/DatabaseHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/CategoryTableHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="46" selection-start="3465" selection-end="3465" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="2565">
+        <state line="132" column="31" selection-start="4143" selection-end="4143" vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="2295">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/CategoryTableHandler.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="31" selection-start="4142" selection-end="4142" vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2235">
+        <state line="3" column="53" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/homebuildguide/MainActivity.java">
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/content/Intent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="67" selection-start="4333" selection-end="4333" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="3735">
+        <state line="2668" column="31" selection-start="125413" selection-end="125413" vertical-scroll-proportion="0.33959043" vertical-offset="39176" max-vertical-offset="106185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="36" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="825">
+          <folding>
+            <element signature="e#421#439#0" expanded="true" />
+            <element signature="e#577#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="0" selection-start="8213" selection-end="8213" vertical-scroll-proportion="0.0" vertical-offset="2775" max-vertical-offset="3615">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2428#2842#0" expanded="true" />
+            <element signature="e#2831#2832#0" expanded="true" />
+            <element signature="e#3413#3429#0" expanded="true" />
+            <element signature="e#4644#5057#0" expanded="true" />
+            <element signature="e#5046#5047#0" expanded="true" />
+            <element signature="e#6511#6527#0" expanded="true" />
+            <element signature="e#6940#6956#0" expanded="true" />
+            <element signature="e#7362#7378#0" expanded="true" />
+            <element signature="e#8525#8541#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/ItemDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="8" selection-start="1785" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="1695">
+          <folding>
+            <element signature="method#addPaymentDialog#0;class#ItemDetailsActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/ItemEditActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="18" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0" vertical-offset="976" max-vertical-offset="1575">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4162" column="16" selection-start="177642" selection-end="177642" vertical-scroll-proportion="0.33222038" vertical-offset="60986" max-vertical-offset="78795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/SecondaryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="20" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/paymentstracker/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="75" selection-end="75" vertical-scroll-proportion="0.114503816" vertical-offset="0" max-vertical-offset="540">
+          <folding />
         </state>
       </provider>
     </entry>

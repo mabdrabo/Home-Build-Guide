@@ -1,4 +1,4 @@
-package com.example.homebuildguide;
+package com.example.paymentstracker;
 
 /**
  * Created by mahmoud on 8/20/13.
